@@ -18,20 +18,20 @@ const calculateHeight = (props) => {
     height = props.theme.FormGroup.height * props.numberOfLines
   }
 
-  if (!props.inlineLabel) {
+  /*if (!props.inlineLabel) {
     height += props.theme.Label.stackedHeight
-  }
+}*/
 
   return (height)
 }
 
 const FormGroupWrapper = styled.View`
-  align-items: ${props => props.inlineLabel ? 'center' : 'stretch' };
+  align-items: ${props => !props.inlineLabel ? 'center' : 'stretch' };
   border-color: ${props => props.error ? props.theme.FormGroup.errorBorderColor : props.theme.FormGroup.borderColor};
   border-radius: ${props => props.theme.FormGroup.borderRadius};
   border-style: ${props => props.theme.FormGroup.borderStyle};
   border-width: ${props => props.border ? props.theme.FormGroup.borderWidth : 0};
-  flex-direction: ${props => props.inlineLabel ? 'row' : 'column' };
+  flex-direction: ${props => !props.inlineLabel ? 'row' : 'column' };
   justify-content: flex-start;
   height: ${props => calculateHeight(props)};
   marginBottom: ${props => props.theme.FormGroup.marginBottom};

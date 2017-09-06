@@ -26,7 +26,7 @@ const LabelIconWrapper = styled.View`
   justify-content: center;
   align-items: center;
   flex-direction:row;
-  height: ${props => props.inlineLabel ? props.theme.FormGroup.height - props.theme.FormGroup.borderWidth*2 : props.theme.FormGroup.height-HaveNoIdeaWhyThisIsNeeded};
+  height: ${props => !props.inlineLabel ? props.theme.FormGroup.height - props.theme.FormGroup.borderWidth*2 : props.theme.FormGroup.height-HaveNoIdeaWhyThisIsNeeded};
 `
 
 LabelIconWrapper.defaultProps = {
@@ -34,8 +34,8 @@ LabelIconWrapper.defaultProps = {
 }
 
 const SelectWrapper = styled.View`
-  flex: ${props => props.inlineLabel ? .5 : 1};
-  height: ${props => props.inlineLabel ? props.theme.FormGroup.height - props.theme.FormGroup.borderWidth*2 : props.theme.FormGroup.height-HaveNoIdeaWhyThisIsNeeded};
+  flex: ${props => !props.inlineLabel ? .5 : 1};
+  height: ${props => !props.inlineLabel ? props.theme.FormGroup.height - props.theme.FormGroup.borderWidth*2 : props.theme.FormGroup.height-HaveNoIdeaWhyThisIsNeeded};
 `
 
 SelectWrapper.defaultProps = {

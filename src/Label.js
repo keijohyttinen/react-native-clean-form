@@ -4,12 +4,12 @@ import styled from 'styled-components/native'
 import defaultTheme from './Theme'
 
 const LabelWrapper = styled.View`
-  flex: ${props => props.inlineLabel ? 0.5 : 1};
-  flex-direction: ${props => props.inlineLabel ? 'row' : 'column'};
+  flex: ${props => !props.inlineLabel ? 0.0 : 1};
+  flex-direction: ${props => !props.inlineLabel ? 'row' : 'column'};
   flex-direction: column;
   justify-content: center;
   padding-left: ${Platform.OS === 'android' ? 5 : 0};
-  marginTop: ${props => props.inlineLabel ? 0 : 5};
+  marginTop: ${props => !props.inlineLabel ? 0 : 5};
 `
 
 const LabelText = styled.Text`

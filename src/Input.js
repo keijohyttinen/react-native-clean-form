@@ -17,9 +17,9 @@ const calculateFlexValue = (props) => {
     flex = props.numberOfLines + 1
   }
 
-  if (props.inlineLabel) {
-    flex = 0.5
-  }
+  if (!props.inlineLabel) {
+        flex = 0.5
+    }
 
   return (flex)
 }
@@ -44,7 +44,7 @@ const determineTextOrientation = (props) => {
 // When doing stacked labels we want the input to be greedy
 const InputWrapper = styled.View`
   flex: ${props => calculateFlexValue(props)};
-  justify-content: center;
+  justify-content: flex-start;
 `
 
 InputWrapper.defaultProps = {
@@ -53,7 +53,7 @@ InputWrapper.defaultProps = {
 
 // Subtract the border of the form group to have a full height input
 const StyledInput = styled.TextInput`
-  flex: ${props => props.inlineLabel ? .5 : 1};
+  flex: ${props => !props.inlineLabel ? .5 : 1};
   color: ${props => props.theme.Input.color};
   font-size: ${props => props.theme.BaseInput.fontSize};
   line-height: ${props => props.theme.BaseInput.lineHeight};
