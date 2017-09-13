@@ -2,21 +2,21 @@ const Theme = {
   Button: {
     backgroundColor: '#4286dd',
     color: '#fff',
-    fontSize: 12,
+    fontSize: 13,
     fontWeight: 700,
     height: 45
   },
   ErrorMessage: {
     color: 'red',
-    fontSize: 10,
+    fontSize: 11,
     marginBottom: 15,
     textAlign: 'right'
   },
   Fieldset: {
-    borderBottomWidth: 1,
+    borderBottomWidth: 0,
     borderBottomColor: '#ddd',
     labelColor: '#909090',
-    labelSize: 9,
+    labelSize: 11,
     labelWeight: 700,
     labelHeight: 25,
     paddingTop: 12,
@@ -39,15 +39,15 @@ const Theme = {
   },
   BaseInput: {
     placeholderColor: '#c9c9c9',
-    fontSize: 12,
-    lineHeight: 18
+    fontSize: 13,
+    lineHeight: 19
   },
   Input: {
     color: '#313131',
   },
   Label: {
     color: '#bfc2c9',
-    fontSize: 12,
+    fontSize: 13,
     stackedHeight: 40
   },
   Select: {
