@@ -30,7 +30,7 @@ const Theme = {
     borderStyle: 'solid',
     borderWidth: 1,
     errorBorderColor: 'red',
-    height: 35,
+    height: 40,
     marginBottom: 10,
     paddingTop: 0,
     paddingBottom: 0,
@@ -40,7 +40,7 @@ const Theme = {
   BaseInput: {
     placeholderColor: '#c9c9c9',
     fontSize: 13,
-    lineHeight: 21
+    lineHeight: 30
   },
   Input: {
     color: '#313131',

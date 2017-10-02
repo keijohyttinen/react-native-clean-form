@@ -72,6 +72,7 @@ class Input extends React.Component {
         multiline={this.props.multiline}
         numberOfLines={this.props.numberOfLines}>
         <StyledInput
+          underlineColorAndroid='transparent'
           inlineLabel={this.props.inlineLabel}
           placeholderTextColor={this.props.theme.BaseInput.placeholderColor}
           {...this.props}/>
