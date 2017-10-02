@@ -39,7 +39,7 @@ const Theme = {
   },
   BaseInput: {
     placeholderColor: '#c9c9c9',
-    fontSize: 13,
+    fontSize: 14,
     lineHeight: 30
   },
   Input: {
@@ -47,7 +47,7 @@ const Theme = {
   },
   Label: {
     color: '#bfc2c9',
-    fontSize: 13,
+    fontSize: 14,
     stackedHeight: 40
   },
   Select: {
